@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-css": "node-sass --include-path scss src/scss/main.scss public/css/main.css"
+    "build-css": "node-sass --include-path scss src/scss/main.scss public/css/main.css",
+    "watch-css": "nodemon -e dcdd -x \"npm run build-css\""
   },
   "dependencies": {
     "bootstrap": "^3.4.1",
