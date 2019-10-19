@@ -1,13 +1,20 @@
 # my-website
 
+
+
+
 ## Project setup
 ```
 npm install
+npm install bootstrap@3
+npm install node-sass
 ```
 
 ### Compiles and hot-reloads for development
 ```
 npm run serve
+
+when scss file change in terminal use this command to compile "npm run watch-css"
 ```
 
 ### Compiles and minifies for production
