@@ -8,7 +8,14 @@
 
 @import './abstract/mixins';
 @import './abstract/default.scss';
-@import './abstract/variables';
+@import './abstract/variables.scss';
+
+
+//------------------------------------
+//         SETTINGS FILES
+//------------------------------------
+
+@import './setting/headings.scss';
 
 //------------------------------------
 //          CORE LAYOUTS

@@ -1,0 +1,45 @@
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+  }
+  
+  @mixin fluid-text($min-vw, $max-vw, $min-font-size, $max-font-size, $min-line-height, $max-line-height) {
+    $u1: unit($min-vw);
+    $u2: unit($max-vw);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+    $p: unit($min-line-height);
+    $p2: unit($max-line-height);
+  
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+      & {
+        font-size: $min-font-size;
+        @media screen and (min-width: $min-vw) {
+          font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+          line-height: calc(#{$min-line-height} + #{strip-unit($max-line-height - $min-line-height)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+        }
+        @media screen and (min-width: $max-vw) {
+          font-size: $max-font-size;
+          line-height: $max-line-height;
+        }
+      }
+    }
+  }
+
+.u-h1 {
+    @include fluid-text(320px, 1920px, 32px, 64px, 38px, 76px );
+  }
+.u-h2 {
+    @include fluid-text(320px, 1920px, 22px, 44px, 26px, 52px);
+  }
+.u-h3 {
+    @include fluid-text(320px, 1920px, 18px, 36px, 21px, 42px);
+  }
+.u-h4 {
+    @include fluid-text(320px, 1920px, 16px, 22px, 21px, 26px);
+  }
+.u-h5 {
+    @include fluid-text(320px, 1920px, 13px, 17px, 15px, 20px);
+  }
+.u-h6 {
+    @include fluid-text(320px, 1920px, 9px, 12px, 10.5px, 15px);
+  }
