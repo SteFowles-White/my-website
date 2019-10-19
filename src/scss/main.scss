@@ -1,10 +1,27 @@
-$core: yellow;
 
-body {
-    background-color: $core;
-    padding: 2rem;
-}
 
-.app {
-    background-color: $core;
-}
+
+
+//------------------------------------
+//         ABSTRACT FILES
+//------------------------------------
+
+@import './abstract/mixins';
+@import './abstract/default.scss';
+@import './abstract/variables';
+
+//------------------------------------
+//          CORE LAYOUTS
+//------------------------------------
+
+@import './layout/_the_site_header';
+@import './layout/_the_site_footer';
+
+//------------------------------------
+//         COMPONENTS
+//------------------------------------
+
+
+//------------------------------------
+//         UTILITIES
+//------------------------------------
