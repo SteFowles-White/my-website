@@ -2,6 +2,8 @@
   <div id="app">
     <the-site-header></the-site-header>
 
+      <router-view></router-view>
+      
     <the-site-footer></the-site-footer>
   </div>
 </template>

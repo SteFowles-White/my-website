@@ -1,9 +1,5 @@
 <template>
-<div class="c__footer">
-    <p>Footer Content</p>
-
-</div>
-    
+    <p>hello About Me</p>
 </template>
 <script>
 export default {

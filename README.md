@@ -8,6 +8,7 @@
 npm install
 npm install bootstrap@3
 npm install node-sass
+npm install vue-router
 ```
 
 ### Compiles and hot-reloads for development
