@@ -69,6 +69,11 @@
       font-size: 12px;
       line-height: 15px; } }
 
+.c__nav__container {
+  float: right;
+  align-items: center;
+  height: 100%; }
+
 .c__footer {
   background-color: blue;
   width: 100%;
