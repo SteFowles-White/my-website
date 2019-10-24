@@ -1,8 +1,12 @@
 .c__nav {
-
+    position: absolute;
 }
 .c__nav__container {
-    float: right;
-    align-items: center;
-    height: 100%;
+    justify-content: flex-end !important;
+}
+.c__nav__logo {
+    height: 70px;
+}
+.c__nav__links {
+    color: $white;
 }

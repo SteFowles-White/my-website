@@ -8,12 +8,20 @@ import TheSiteHeader from './components/headerFooter/TheSiteHeader'
 import TheSiteFooter from './components/headerFooter/TheSiteFooter.vue'
 
 
+import HeaderBlock from './components/blocks/HeaderBlock'
+
+
 //------------------------------------
 //         CORE COMPONETENT
 //------------------------------------
 Vue.component( 'TheSiteHeader' , TheSiteHeader )
 Vue.component( 'TheSiteFooter' , TheSiteFooter )
 
+
+//------------------------------------
+//         Blocks
+//------------------------------------
+Vue.component( 'HeaderBlock' , HeaderBlock )
 
 //------------------------------------
 //         CORE PAGES

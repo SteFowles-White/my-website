@@ -16,6 +16,7 @@
 //------------------------------------
 
 @import './setting/headings.scss';
+@import './setting/colors.scss';
 
 //------------------------------------
 //          CORE LAYOUTS
@@ -25,9 +26,16 @@
 @import './layout/_the_site_footer';
 
 //------------------------------------
+//         BLOCK
+//------------------------------------
+
+@import './components/blocks/header_block';
+
+//------------------------------------
 //         COMPONENTS
 //------------------------------------
 
+@import './components/components/menu_icon';
 
 //------------------------------------
 //         UTILITIES

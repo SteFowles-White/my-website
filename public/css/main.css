@@ -3,6 +3,10 @@
   padding: 0;
   border: 0; }
 
+a:hover {
+  color: white;
+  text-decoration: underline; }
+
 .u-h1 {
   font-size: 32px; }
   @media screen and (min-width: 320px) {
@@ -69,12 +73,28 @@
       font-size: 12px;
       line-height: 15px; } }
 
+.c__nav {
+  position: absolute; }
+
 .c__nav__container {
-  float: right;
-  align-items: center;
-  height: 100%; }
+  justify-content: flex-end !important; }
+
+.c__nav__logo {
+  height: 70px; }
+
+.c__nav__links {
+  color: white; }
 
 .c__footer {
   background-color: blue;
   width: 100%;
   height: 50px; }
+
+.c__header__containter {
+  height: 100vh; }
+
+.c_icon_bar {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0px; }

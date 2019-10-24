@@ -1,5 +1,7 @@
 <template>
-    <p>hello</p>
+    <div class="">
+        <header-block></header-block>
+    </div>
 </template>
 <script>
 export default {
