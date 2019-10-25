@@ -1,6 +1,28 @@
-.c_icon_bar {
+.c__icon__top__bar,
+.c__icon__middle__bar,
+.c__icon__bottom__bar {
+    display: block;
     width: 40px;
+    opacity: 1;
     height: 2px;
     background-color: white;
     margin: 9px 0px;
+    transition: .5s
+
 }
+.transition__top{
+    transform: rotate(-45deg) translate(-6px, 12px);
+}
+.transition__middle{
+    opacity: 0;
+}
+.transition__bottom{
+    transform: rotate(45deg) translate(-4px, -10px);
+}
+@media only screen and (max-width: 576px){ 
+    .c_icon_bar{
+        width: 35px; 
+        }
+    }
+
+    

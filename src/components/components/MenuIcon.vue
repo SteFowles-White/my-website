@@ -1,16 +1,19 @@
 <template>
-    <div>
-        <!-- Bind a class to add a class -->
-        <!-- this class will set the animation in motion -->
-        <!-- might also look at animation via javascript before that -->
-        <div class="c_icon_bar"></div>
-        <div class="c_icon_bar"></div>
-        <div class="c_icon_bar"></div>
+    <div @click="toggleMenuIcon = !toggleMenuIcon">
+        <div class="c__icon__top__bar" :class="{ transition__top: toggleMenuIcon }"></div>
+        <div class="c__icon__middle__bar" :class="{ transition__middle: toggleMenuIcon }"></div>
+        <div class="c__icon__bottom__bar" :class="{ transition__bottom: toggleMenuIcon }"></div>
     </div>
 
 </template>
 <script>
 export default {
+    data() {
+        return {
+            toggleMenuIcon: false
+        }
+
+    }
     
 }
 </script>

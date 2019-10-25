@@ -6,7 +6,21 @@
 }
 .c__nav__logo {
     height: 70px;
+    -webkit-transition: height 1s; /* Safari prior 6.1 */
+    transition: height 1s;
+    transition-timing-function: ease-in-out;
 }
 .c__nav__links {
     color: $white;
+}
+
+@media only screen and (max-width: 576px){ 
+.c__nav__logo{
+    height: 60px; 
+    }
+}
+@media only screen and (max-width: 300px){ 
+.c__nav__logo{
+    display: none; 
+    }
 }

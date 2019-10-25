@@ -80,10 +80,22 @@ a:hover {
   justify-content: flex-end !important; }
 
 .c__nav__logo {
-  height: 70px; }
+  height: 70px;
+  -webkit-transition: height 1s;
+  /* Safari prior 6.1 */
+  transition: height 1s;
+  transition-timing-function: ease-in-out; }
 
 .c__nav__links {
   color: white; }
+
+@media only screen and (max-width: 576px) {
+  .c__nav__logo {
+    height: 60px; } }
+
+@media only screen and (max-width: 300px) {
+  .c__nav__logo {
+    display: none; } }
 
 .c__footer {
   background-color: blue;
@@ -93,8 +105,32 @@ a:hover {
 .c__header__containter {
   height: 100vh; }
 
-.c_icon_bar {
-  width: 35px;
-  height: 5px;
+.c__nav__mobile {
+  text-align: center; }
+
+.navbar-toggler:focus {
+  outline: 0px; }
+
+.c__icon__top__bar,
+.c__icon__middle__bar,
+.c__icon__bottom__bar {
+  display: block;
+  width: 40px;
+  opacity: 1;
+  height: 2px;
   background-color: white;
-  margin: 6px 0px; }
+  margin: 9px 0px;
+  transition: .5s; }
+
+.transition__top {
+  transform: rotate(-45deg) translate(-6px, 12px); }
+
+.transition__middle {
+  opacity: 0; }
+
+.transition__bottom {
+  transform: rotate(45deg) translate(-4px, -10px); }
+
+@media only screen and (max-width: 576px) {
+  .c_icon_bar {
+    width: 35px; } }
