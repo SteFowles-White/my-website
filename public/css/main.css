@@ -77,7 +77,8 @@ a:hover {
   position: absolute; }
 
 .c__nav__container {
-  justify-content: flex-end !important; }
+  justify-content: flex-end !important;
+  width: 100vh; }
 
 .c__nav__logo {
   height: 70px;
@@ -89,9 +90,44 @@ a:hover {
 .c__nav__links {
   color: white; }
 
+.c__nav__container__mobile {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 150vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); }
+
+.c__nav__mobile {
+  text-align: center;
+  position: static;
+  height: auto;
+  width: auto;
+  max-width: auto;
+  display: none; }
+
+@media only screen and (max-width: 768px) {
+  .c__nav__mobile {
+    display: block;
+    text-align: center;
+    background-color: #276864;
+    position: absolute;
+    right: -15px;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    max-width: 345px; } }
+
 @media only screen and (max-width: 576px) {
   .c__nav__logo {
-    height: 60px; } }
+    height: 60px; }
+  .navbar {
+    padding: .5rem 0rem; }
+  .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px; }
+  .c__nav__logo {
+    padding-left: .5rem; } }
 
 @media only screen and (max-width: 300px) {
   .c__nav__logo {
@@ -104,9 +140,6 @@ a:hover {
 
 .c__header__containter {
   height: 100vh; }
-
-.c__nav__mobile {
-  text-align: center; }
 
 .navbar-toggler:focus {
   outline: 0px; }
@@ -132,5 +165,7 @@ a:hover {
   transform: rotate(45deg) translate(-4px, -10px); }
 
 @media only screen and (max-width: 576px) {
-  .c_icon_bar {
-    width: 35px; } }
+  .c__icon__top__bar,
+  .c__icon__middle__bar,
+  .c__icon__bottom__bar {
+    width: 30px; } }

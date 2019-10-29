@@ -20,8 +20,10 @@
     transform: rotate(45deg) translate(-4px, -10px);
 }
 @media only screen and (max-width: 576px){ 
-    .c_icon_bar{
-        width: 35px; 
+    .c__icon__top__bar,
+    .c__icon__middle__bar,
+    .c__icon__bottom__bar{
+        width: 30px; 
         }
     }
 

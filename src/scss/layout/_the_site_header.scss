@@ -3,6 +3,7 @@
 }
 .c__nav__container {
     justify-content: flex-end !important;
+    width: 100vh;
 }
 .c__nav__logo {
     height: 70px;
@@ -13,11 +14,51 @@
 .c__nav__links {
     color: $white;
 }
+.c__nav__container__mobile{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 150vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
 
+.c__nav__mobile{
+    text-align: center;
+    position: static;
+    height: auto;
+    width: auto;
+    max-width: auto;
+    display: none;
+}
+
+@media only screen and (max-width: 768px){ 
+    .c__nav__mobile{
+        display: block;
+        text-align: center;
+        background-color: $base-green;
+        position: absolute;
+        right: -15px;
+        top: 0px;
+        height: 100vh;
+        width: 100vw;
+        max-width: 345px;
+    }
+}
 @media only screen and (max-width: 576px){ 
 .c__nav__logo{
     height: 60px; 
     }
+.navbar {
+    padding: .5rem 0rem; 
+    }
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;;
+    }
+.c__nav__logo {
+    padding-left: .5rem;
+}
 }
 @media only screen and (max-width: 300px){ 
 .c__nav__logo{
