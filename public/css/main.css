@@ -73,24 +73,33 @@ a:hover {
       font-size: 12px;
       line-height: 15px; } }
 
-.c__nav {
+.c-nav {
   position: absolute; }
 
-.c__nav__container {
+.c-nav__container {
   justify-content: flex-end !important;
   width: 100vh; }
 
-.c__nav__logo {
+.c-nav__logo {
   height: 70px;
   -webkit-transition: height 1s;
   /* Safari prior 6.1 */
   transition: height 1s;
   transition-timing-function: ease-in-out; }
 
-.c__nav__links {
+.c-nav__links {
   color: white; }
 
-.c__nav__container__mobile {
+.c-nav__links__mobile {
+  color: #F5F3E3;
+  background: radial-gradient(circle, #f5f3e3 0%, #276864 0%, #276864 100%);
+  transition: all 1.5s; }
+
+.c-nav__links__mobile:hover {
+  opacity: 1;
+  background: #F5F3E3; }
+
+.c-nav__container__mobile {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -98,7 +107,7 @@ a:hover {
   height: 100vh;
   background: rgba(0, 0, 0, 0.5); }
 
-.c__nav__mobile {
+.c-nav__mobile {
   text-align: center;
   position: static;
   height: auto;
@@ -106,8 +115,19 @@ a:hover {
   max-width: auto;
   display: none; }
 
+.c_nav__mobile__button {
+  width: 35px;
+  background-color: #276864; }
+
+.c_nav__mobile__border__one {
+  border-top: 1px solid #275e5b;
+  border-bottom: 1px solid #275e5b; }
+
+.c_nav__mobile__border__two {
+  border-bottom: 1px solid #275e5b; }
+
 @media only screen and (max-width: 768px) {
-  .c__nav__mobile {
+  .c_nav__mobile {
     display: block;
     text-align: center;
     background-color: #276864;
@@ -119,18 +139,18 @@ a:hover {
     max-width: 345px; } }
 
 @media only screen and (max-width: 576px) {
-  .c__nav__logo {
+  .c-nav__logo {
     height: 60px; }
   .navbar {
     padding: .5rem 0rem; }
   .container-fluid {
     padding-right: 0px;
     padding-left: 0px; }
-  .c__nav__logo {
+  .c-nav__logo {
     padding-left: .5rem; } }
 
 @media only screen and (max-width: 300px) {
-  .c__nav__logo {
+  .c-nav__logo {
     display: none; } }
 
 .c__footer {
@@ -154,15 +174,6 @@ a:hover {
   background-color: white;
   margin: 9px 0px;
   transition: .5s; }
-
-.transition__top {
-  transform: rotate(-45deg) translate(-6px, 12px); }
-
-.transition__middle {
-  opacity: 0; }
-
-.transition__bottom {
-  transform: rotate(45deg) translate(-4px, -10px); }
 
 @media only screen and (max-width: 576px) {
   .c__icon__top__bar,

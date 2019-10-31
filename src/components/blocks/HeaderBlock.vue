@@ -27,8 +27,13 @@ export default {
     background-size: cover;
     width: 100%;
     overflow: hidden;
+}
 
-    background-attachment: fixed
+
+@media screen and (min-width: 768px) {
+.c__header__containter{
+    background-attachment: fixed;
+    }
 }
 
 </style>

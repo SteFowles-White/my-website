@@ -1,20 +1,30 @@
-.c__nav {
+.c-nav {
     position: absolute;
 }
-.c__nav__container {
+.c-nav__container {
     justify-content: flex-end !important;
     width: 100vh;
 }
-.c__nav__logo {
+.c-nav__logo {
     height: 70px;
     -webkit-transition: height 1s; /* Safari prior 6.1 */
     transition: height 1s;
     transition-timing-function: ease-in-out;
 }
-.c__nav__links {
+.c-nav__links {
     color: $white;
 }
-.c__nav__container__mobile{
+.c-nav__links__mobile {
+    color: $base-light;
+    background: radial-gradient(circle, rgba(245,243,227,1) 0%, rgba(39,104,100,1) 0%, rgba(39,104,100,1) 100%);
+    transition: all 1.5s;
+}
+
+.c-nav__links__mobile:hover {
+    opacity: 1;
+    background: $base-light;
+}
+.c-nav__container__mobile{
     position: absolute;
     top: 0px;
     right: 0px;
@@ -23,7 +33,7 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-.c__nav__mobile{
+.c-nav__mobile{
     text-align: center;
     position: static;
     height: auto;
@@ -31,9 +41,20 @@
     max-width: auto;
     display: none;
 }
+.c_nav__mobile__button{
+    width: 35px;
+    background-color: $base-green;
+}
+.c_nav__mobile__border__one {
+    border-top: 1px solid $dark-base-green;
+    border-bottom: 1px solid $dark-base-green;
+}
+.c_nav__mobile__border__two {
+    border-bottom: 1px solid $dark-base-green;
+}
 
 @media only screen and (max-width: 768px){ 
-    .c__nav__mobile{
+    .c_nav__mobile{
         display: block;
         text-align: center;
         background-color: $base-green;
@@ -46,7 +67,7 @@
     }
 }
 @media only screen and (max-width: 576px){ 
-.c__nav__logo{
+.c-nav__logo{
     height: 60px; 
     }
 .navbar {
@@ -56,12 +77,12 @@
     padding-right: 0px;
     padding-left: 0px;;
     }
-.c__nav__logo {
+.c-nav__logo {
     padding-left: .5rem;
 }
 }
 @media only screen and (max-width: 300px){ 
-.c__nav__logo{
+.c-nav__logo{
     display: none; 
     }
 }

@@ -9,6 +9,8 @@ npm install
 npm install bootstrap@3
 npm install node-sass
 npm install vue-router
+npm install vue-router
+npm i vue-fixed-header --save (fot the navigaion bar)
 ```
 
 ### Compiles and hot-reloads for development
