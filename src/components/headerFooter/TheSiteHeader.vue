@@ -5,14 +5,12 @@
             <button @click="mobileNavVeiw = !mobileNavVeiw" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <menu-icon></menu-icon>
             </button>
-            <fixed-header>
-                <nav class="navbar-collapse navbar c-nav__container d-none d-md-block mr-lg-4">
-                    <router-link to="/" class="nav-link active c-nav__links" active-class="active" exact>Home</router-link>
-                    <router-link to="/about-me" class="nav-link active c-nav__links">About</router-link>
-                    <router-link to="/work" class="nav-link active c-nav__links">Work</router-link>
-                    <router-link to="/contact" class="nav-link active c-nav__links">Contact</router-link>
-                </nav>
-            </fixed-header>
+            <nav class="navbar-collapse navbar c-nav__container d-none d-md-block mr-lg-4">
+                <router-link to="/" class="nav-link active c-nav__links" active-class="active" exact>Home</router-link>
+                <router-link to="/about-me" class="nav-link active c-nav__links">About</router-link>
+                <router-link to="/work" class="nav-link active c-nav__links">Work</router-link>
+                <router-link to="/contact" class="nav-link active c-nav__links">Contact</router-link>
+            </nav>
             <transition name="slide">
                 <nav v-show="mobileNavVeiw"  class="c-nav__container__mobile d-md-none">
                     <div :class="{ c_nav__mobile: delayedView }">
@@ -31,8 +29,7 @@
 </template>
 <script>
 import MenuIcon from '../components/MenuIcon'
-// this is an expernal package -- npm i vue-fixed-header
-import FixedHeader from 'vue-fixed-header'
+
 
 export default {
     data(){
@@ -43,7 +40,6 @@ export default {
     },
     components: {
         MenuIcon,
-        FixedHeader
     },   
     methods: {
         delayedView(){
