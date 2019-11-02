@@ -6,15 +6,18 @@ import { routes } from './router/routes'
 
 import TheSiteHeader from './components/headerFooter/TheSiteHeader'
 import TheSiteFooter from './components/headerFooter/TheSiteFooter.vue'
+import Nav from './components/headerFooter/Nav.vue'
 
 
 import HeaderBlock from './components/blocks/HeaderBlock'
+
 
 
 //------------------------------------
 //         CORE COMPONETENT
 //------------------------------------
 Vue.component( 'TheSiteHeader' , TheSiteHeader )
+Vue.component( 'Navigation' , Nav )
 Vue.component( 'TheSiteFooter' , TheSiteFooter )
 
 

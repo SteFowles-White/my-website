@@ -74,7 +74,11 @@ a:hover {
       line-height: 15px; } }
 
 .c-nav {
-  position: absolute; }
+  position: absolute;
+  width: 100%;
+  /* Full width */
+  transition: top 0.3s;
+  /* Transition effect when sliding down (and up) */ }
 
 .c-nav__container {
   justify-content: flex-end !important;
@@ -103,7 +107,7 @@ a:hover {
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 150vw;
+  width: 200vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5); }
 
