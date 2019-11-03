@@ -3,7 +3,16 @@
         <div class="c__header__sub__container position-absolute"></div>
         <div class="container c__header__sub__content">
                 <div class="col c__header__sub__content--alignment">
-                     <h1 class="u-h1 text-center text-white font-weight-light">Creating Responsive Design Using HTML, CSS & Javascript</h1>
+                     <h1 class="u-h1 text-center text-white font-weight-light col-">Creating Responsive Website Designs</h1>
+                     <h3 class="u-h3 text-center text-white font-weight-light col- mb-5">Making your ideas come to light</h3>
+                     <div class="container">
+                        <div class="row">
+                            <div class="col text-center text-white">
+                                <router-link to="/work" class="text-white btn btn-primary btn-lg c__header__button mr-4" active-class="active" exact>Previous work</router-link>
+                                <router-link to="/contact" class="text-white btn btn-primary btn-lg c__header__button" active-class="active" exact>Get in touch</router-link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
         </div>
     </div>
@@ -13,7 +22,7 @@ export default {
     
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
 
 .c__header__containter {
     background : url("../../assets/img/headerBlock.jpg");
@@ -42,8 +51,22 @@ export default {
     align-items: center
 }
 .c__header__sub__content--alignment{
-    display: flex;
+    display: list-item;
     align-items: center
+}
+.c__header__button{
+    width: 30%;
+    background-color: inherit !important;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border: 2px solid white !important;
+    transition: background-color 1s,  border-color 1s;
+}
+.c__header__button:hover{
+    background-color: #04244A !important;
+    border-color: #04244A !important;
+
 }
 @media screen and (min-width: 768px) {
 .c__header__containter{
@@ -55,6 +78,11 @@ export default {
         background-color: black}
     to {opacity: 0;
         background-color: inherit}
+}
+@media screen and (max-width: 576px) {
+.c__header__button{
+    width: 80%;
+    }
 }
 
 
