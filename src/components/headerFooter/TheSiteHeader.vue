@@ -37,5 +37,16 @@ export default {
     background-color: rgba(0,0,0, .3) !important;
     position: fixed !important;
 }
-
+.c-nav{
+    transition-delay: 2s;
+    -webkit-animation: fade 4s forwards; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fade 4s forwards; /* Firefox < 16 */
+    -ms-animation: fade 4s forwards; /* Internet Explorer */
+    -o-animation: fade 4s forwards; /* Opera < 12.1 */
+    animation: fade 4s forwards;
+}
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 </style>

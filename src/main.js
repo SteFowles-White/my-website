@@ -10,6 +10,7 @@ import Nav from './components/headerFooter/Nav.vue'
 
 
 import HeaderBlock from './components/blocks/HeaderBlock'
+import ThreeBlockContent from './components/blocks/ThreeBlockContent'
 
 
 
@@ -25,6 +26,7 @@ Vue.component( 'TheSiteFooter' , TheSiteFooter )
 //         Blocks
 //------------------------------------
 Vue.component( 'HeaderBlock' , HeaderBlock )
+Vue.component( 'ThreeBlockContent' , ThreeBlockContent )
 
 //------------------------------------
 //         CORE PAGES

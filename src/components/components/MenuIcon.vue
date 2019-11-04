@@ -18,5 +18,24 @@ export default {
 }
 </script>
 <style scoped>
+.c__icon__top__bar,
+.c__icon__middle__bar,
+.c__icon__bottom__bar {
+    display: block;
+    width: 40px;
+    opacity: 1;
+    height: 2px;
+    background-color: white;
+    margin: 9px 0px;
+    transition: .5s
+}
+@media only screen and (max-width: 576px){ 
+    .c__icon__top__bar,
+    .c__icon__middle__bar,
+    .c__icon__bottom__bar{
+        width: 30px; 
+        }
+    }
 
+    
 </style>

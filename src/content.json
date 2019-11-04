@@ -1,0 +1,30 @@
+{
+    "homePage": {
+        "headerBlock": {
+            "mainTitle": "Creating Responsive Website Designs",
+            "subtitle": "Making your ideas come to light",
+            "buttonText": "Previous work",
+            "buttonLink": "/work",
+            "buttonText_1": "Get in touch",
+            "buttonLink_2": "/contact"
+        },
+        "ThreeBlockContent": {
+            "blockOne": {
+                "thumbnail": "understand-your-website",
+                "title": "Understading your website",
+                "content": "I can work together to understand what you want your website message to be to esure your visors get the best expereince on your website."
+            },
+            "blockTwo": {
+                "thumbnail": "build-your-design",
+                "title": "Build your Design",
+                "content": "I collabortivily to ensure that the your website is done to your design. Also ensuring that you are informed throughtout the development process."
+            },
+            "blockTree": {
+                "thumbnail": "test-your-website",
+                "title": "Test Your Website",
+                "content": "Website are used on so many devices that testing on different platform is essential to ensure your website always looks pixil perfect."
+            }
+        }
+
+    }
+}

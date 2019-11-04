@@ -73,6 +73,18 @@ a:hover {
       font-size: 12px;
       line-height: 15px; } }
 
+.base-green-background-color {
+  background-color: #276864; }
+
+.base-light-background-color {
+  background-color: #F5F3E3; }
+
+.u__text__color__white {
+  color: white; }
+
+.u__text__color__dark__blue {
+  color: #04244A; }
+
 .c-nav {
   position: absolute;
   width: 100%;
@@ -156,31 +168,3 @@ a:hover {
 @media only screen and (max-width: 300px) {
   .c-nav__logo {
     display: none; } }
-
-.c__footer {
-  background-color: blue;
-  width: 100%;
-  height: 50px; }
-
-.c__header__containter {
-  height: 100vh; }
-
-.navbar-toggler:focus {
-  outline: 0px; }
-
-.c__icon__top__bar,
-.c__icon__middle__bar,
-.c__icon__bottom__bar {
-  display: block;
-  width: 40px;
-  opacity: 1;
-  height: 2px;
-  background-color: white;
-  margin: 9px 0px;
-  transition: .5s; }
-
-@media only screen and (max-width: 576px) {
-  .c__icon__top__bar,
-  .c__icon__middle__bar,
-  .c__icon__bottom__bar {
-    width: 30px; } }

@@ -1,15 +1,15 @@
 <template>
     <div class="container-fluid c__nav__container">
         <div class="navbar navbar-expand-md">
-            <a href=""><img class="pt-1 pb-1 c-nav__logo" src="../../assets/icons/logo.png"></a>
+            <a href="" class="c__nav__logo"><img class="pt-1 pb-1 c-nav__logo" src="../../assets/icons/logo.png"></a>
             <button @click="mobileNavVeiw = !mobileNavVeiw" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <menu-icon></menu-icon>
             </button>
             <nav class="navbar-collapse navbar c-nav__container d-none d-md-block mr-lg-4">
-                <router-link to="/" class="nav-link active c-nav__links" active-class="active" exact>Home</router-link>
-                <router-link to="/about-me" class="nav-link active c-nav__links">About</router-link>
-                <router-link to="/work" class="nav-link active c-nav__links">Work</router-link>
-                <router-link to="/contact" class="nav-link active c-nav__links">Contact</router-link>
+                <router-link to="/" class="nav-link active c-nav__links u-h4" active-class="active" exact>Home</router-link>
+                <router-link to="/about-me" class="nav-link active c-nav__links u-h4">About</router-link>
+                <router-link to="/work" class="nav-link active c-nav__links u-h4">Work</router-link>
+                <router-link to="/contact" class="nav-link active c-nav__links u-h4">Contact</router-link>
             </nav>
             <transition name="slide">
                 <nav v-show="mobileNavVeiw"  class="c-nav__container__mobile d-md-none">
@@ -73,7 +73,9 @@ export default {
 .c__nav__container {
     z-index: 900;
 }
-
+.c__nav__logo{
+    margin-left: -1rem;
+}
 .slide-enter-active {
     animation: slider-in .8s ease-out forwards; 
 }
@@ -88,5 +90,10 @@ export default {
 @keyframes slider-out {
     from {transform: translateX(0px)}
     to { transform: translateX(345px);}
+}
+@media screen and (max-width: 576px) {
+.c__nav__logo{
+    margin-left: -1.5rem;
+}
 }
 </style>

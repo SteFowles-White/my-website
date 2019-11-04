@@ -10,5 +10,24 @@ $base-light: #F5F3E3;
 $white: white;
 
 //-----------------------
-//      CUSTOM COLORS    
+//   BACKGROUND COLORS    
 //-----------------------
+
+.base-green-background-color {
+    background-color: $base-green
+}
+.base-light-background-color {
+    background-color: $base-light
+}
+
+//-----------------------
+//    TEXT COLORS    
+//-----------------------
+
+.u__text__color__white{
+    color: $white;
+}
+
+.u__text__color__dark__blue{
+    color: $base-dark-blue;
+}
