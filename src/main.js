@@ -11,6 +11,7 @@ import Nav from './components/headerFooter/Nav.vue'
 
 import HeaderBlock from './components/blocks/HeaderBlock'
 import ThreeBlockContent from './components/blocks/ThreeBlockContent'
+import Swiper from './components/Swiper'
 
 
 
@@ -27,6 +28,7 @@ Vue.component( 'TheSiteFooter' , TheSiteFooter )
 //------------------------------------
 Vue.component( 'HeaderBlock' , HeaderBlock )
 Vue.component( 'ThreeBlockContent' , ThreeBlockContent )
+Vue.component( 'Swiper' , Swiper )
 
 //------------------------------------
 //         CORE PAGES

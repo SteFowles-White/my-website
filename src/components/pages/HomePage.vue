@@ -2,6 +2,7 @@
     <div class="">
         <header-block></header-block>
         <ThreeBlockContent :block="getThreeBlockContent"></ThreeBlockContent>
+        <swiper></swiper>
     </div>
 </template>
 <script>
