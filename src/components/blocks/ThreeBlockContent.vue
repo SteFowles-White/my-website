@@ -1,7 +1,7 @@
 <template>
 <div class="container-fluid base-light-background-color">
     <div class="row pb-2 pt-3">
-        <p class="u-h2 pl-3 pb-2 font-weight-normal">How I work</p>
+        <p class="u-h2 pl-3 pb-2 font-weight-normal">{{ getMainTitle }}</p>
     </div>
     <div class="row pb-3">
 
@@ -22,25 +22,16 @@ export default {
             default: undefined
         }
     },
-    data() {
-        return {
-            content: {
-                firstBlock: {
-                    thumbnail: "understand-your-website",
-                    heading: "Understading your website",
-                    content: "We can work together to understand what you want your website message to be to esure your visors get the best expereince on your website"
-                }
-            }
-        }
-    },
     computed: {
         getContent(){
             if(this.block === "null" || this.block === "undefined"){
                 return null;
             }else{
-                // console.log(this.block.blockOne.img)
-                return this.block;
+                return this.block.blocks;
             }
+        },
+        getMainTitle(){
+            return this.block.mainTitle;
         }
     }
     

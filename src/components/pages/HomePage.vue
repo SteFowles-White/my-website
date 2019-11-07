@@ -2,7 +2,7 @@
     <div class="">
         <header-block></header-block>
         <ThreeBlockContent :block="getThreeBlockContent"></ThreeBlockContent>
-        <swiper></swiper>
+        <swiper :block="getSliderContent"></swiper>
     </div>
 </template>
 <script>
@@ -21,6 +21,14 @@ export default {
             }
             else{
                 return this.homeData.ThreeBlockContent
+            }
+        },
+        getSliderContent(){
+            if(this.homeData.slider === "null" || this.homeData.slider === "undefined") {
+                return null;
+            }
+            else{
+                return this.homeData.slider
             }
         }
     }
