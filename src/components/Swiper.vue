@@ -1,12 +1,22 @@
 <template>
-  <swiper :options="swiperOption">
-    <swiper-slide class="swiper-slide" v-for="(slide, index) in getSwiperContent" :key="index">
-        <img :src="require(`../assets/img/${slide}.jpg`)" class="img-fluid mb-2 c__content__img">
-    </swiper-slide>
-    <div class="swiper-pagination" slot="pagination"></div>
-    <div class="swiper-button-next swiper-button-white"></div>
-    <div class="swiper-button-prev swiper-button-white"></div>
-  </swiper>
+<div class="container-fluid base-dark-blue-background-color">
+  <div class="container pt-5 pb-5">
+    <h1 class="u__text__base-light pb-4 font-weight-light u-h1">Previous websites worked on</h1>
+    <swiper :options="swiperOption">
+      <swiper-slide class="swiper-slide" v-for="(slide, index) in getSwiperContent" :key="index">
+          <div class="c__content__block">
+            <h2 class="pt-3 u__text__base-light font-weight-light u-h3">{{slide.title}}</h2>
+            <p class="u__text__base-light font-weight-light u-h5">{{slide.content}}</p>
+          </div>
+          <img :src="require(`../assets/img/${slide.image}.jpg`)" class="img-fluid mb-2 c__content__img">
+          
+      </swiper-slide>
+      <div class="swiper-pagination" slot="pagination"></div>
+      <div class="swiper-button-next d-none d-md-block swiper-button-white"></div>
+      <div class="swiper-button-prev d-none d-md-block swiper-button-white"></div>
+    </swiper>
+  </div>
+</div>
 </template>
 <script>
 import 'swiper/dist/css/swiper.css'
@@ -27,11 +37,12 @@ export default {
      data() {
       return {
         swiperOption: {
-          effect:'fade',
-          spaceBetween: 30,
+          effect: 'flip',
+          grabCursor: true,
           loop: true,
           pagination: {
             el: '.swiper-pagination',
+            type: 'progressbar',
             clickable: true
           },
           navigation: {
@@ -39,7 +50,6 @@ export default {
             prevEl: '.swiper-button-prev',
           }
         },
-        swiperSlides: [1, 2, 3, 4, 5]
       }
     },  
     computed: {
@@ -54,14 +64,32 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.swiper-container {
-    width: 600px;
-    height: 300px;
+.c__content__img,
+.c__content__block{
+  display: block;
+  margin: auto;
+  width: 90%;
+  height: auto;
 }
-.swiper-slide{
-    height: 4rem;
-    text-align: center;
-    padding-top: 3rem;
-    border-bottom: 1px solid #ccc;
+.swiper-pagination-progressbar
+ .swiper-pagination-progressbar-fill{
+  height: 20px !important;
+  background: #275e5b !important;
+
+ }
+@media only screen and (max-width: 991px) {
+.c__content__img,
+.c__content__block{
+  display: block;
+  margin: auto;
+  width: 85%;
+  height: auto;
+}
+}
+@media only screen and (max-width: 540px) {
+.c__content__img,
+.c__content__block{
+  width: 95%;
+}
 }
 </style>

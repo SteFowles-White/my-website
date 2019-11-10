@@ -3,6 +3,7 @@
         <header-block></header-block>
         <ThreeBlockContent :block="getThreeBlockContent"></ThreeBlockContent>
         <swiper :block="getSliderContent"></swiper>
+        <diagonal-content></diagonal-content>
     </div>
 </template>
 <script>

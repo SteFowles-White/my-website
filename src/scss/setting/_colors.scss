@@ -19,6 +19,9 @@ $white: white;
 .base-light-background-color {
     background-color: $base-light
 }
+.base-dark-blue-background-color {
+    background-color: $base-dark-blue;
+}
 
 //-----------------------
 //    TEXT COLORS    
@@ -26,6 +29,9 @@ $white: white;
 
 .u__text__color__white{
     color: $white;
+}
+.u__text__base-light{
+    color: $base-light
 }
 
 .u__text__color__dark__blue{

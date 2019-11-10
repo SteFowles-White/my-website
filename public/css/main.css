@@ -79,8 +79,14 @@ a:hover {
 .base-light-background-color {
   background-color: #F5F3E3; }
 
+.base-dark-blue-background-color {
+  background-color: #04244A; }
+
 .u__text__color__white {
   color: white; }
+
+.u__text__base-light {
+  color: #F5F3E3; }
 
 .u__text__color__dark__blue {
   color: #04244A; }

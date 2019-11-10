@@ -1,14 +1,16 @@
 <template>
-<div class="container-fluid base-light-background-color">
-    <div class="row pb-2 pt-3">
-        <p class="u-h2 pl-3 pb-2 font-weight-normal">{{ getMainTitle }}</p>
-    </div>
-    <div class="row pb-3">
+<div class="base-light-background-color">
+    <div class="container">
+        <div class="row pb-2 pt-3">
+            <p class="u-h2 pl-3 pb-2 font-weight-normal">{{ getMainTitle }}</p>
+        </div>
+        <div class="row pb-3">
 
-        <div v-for="(item, index) in getContent" class="col-md c__content__block" :key="index">
-            <img :src="require(`../../assets/img/${item.thumbnail}.jpg`)" class="img-fluid mb-2 c__content__img">
-            <p class="u__text__color__dark__blue u-h4 font-weight-normal text-center">{{ item.title }}</p>
-            <p class="u__text__color__dark__blue h-h5 font-weight-light"> {{ item.content }}</p>
+            <div v-for="(item, index) in getContent" class="col-md c__content__block" :key="index">
+                <img :src="require(`../../assets/img/${item.thumbnail}.jpg`)" class="img-fluid mb-2 c__content__img">
+                <p class="u__text__color__dark__blue u-h4 font-weight-normal text-center">{{ item.title }}</p>
+                <p class="u__text__color__dark__blue h-h5 font-weight-light"> {{ item.content }}</p>
+            </div>
         </div>
     </div>
 </div>
