@@ -33,19 +33,26 @@
                 "slideOne":{
                     "image": "auto-trail",
                     "title": "Auto Trail",
-                    "content": "A large project were I worked with a team of 3 developers and 2 designers to develop and produce this new website at kal group. Custom designed to the clients needs and to make sure that views have a clear navigation to buy there perfect motor  home. During this project I utlised HTML, CSS (Sass), Javascript and the Vue framework."
+                    "content": "A large project were I worked with a team of 3 developers and 2 designers to develop and produce this new custom website at kal group."
                     },
                 "slideTwo":{
                     "image": "pemberton",
                     "title": "Pembertons",
-                    "content": "This was a project were the client wanted to make 85% of there website responsive as the website was static and not mobile friendly. I worked closly with then client and the lead designer to esnure the client website is more mobile friendly"
+                    "content": "This was a project were the client wanted to make 85% of there website responsive as the website was static and not mobile friendly."
                     },
                 "slideTree":{
                     "image": "ih-motothomes",
                     "title": "IH Motorhomes",
-                    "content": "A large project were I worked with a team of 3 developers and 2 designers to develop and produce this new website at kal group. Custom designed to the clients needs and to make sure that views have a clear navigation to buy there perfect motor  home. During this project I utlised HTML, CSS (Sass), Javascript and the Vue framework."
+                    "content": "Create a new page for and added a facebook feed on the home page of this website. "
                     }
             }
+        },
+        "diagonalContent": {
+            "title": "Type of Work",
+            "subtitle": "Divese types of work",
+            "content": "Having worked on a variety of web development project to client demand, there is a real passion to make sure that you get what you need. This ranges from; making websites responsive to different devices, front ending web design projects and making amendments to existing web sites.",
+            "buttonText": "More work",
+            "buttonLink": "/work"
         }
 
     }

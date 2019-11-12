@@ -10,7 +10,7 @@ npm install bootstrap@3
 npm install node-sass
 npm install vue-router
 npm install --save-dev node-sass sass-loader
-npm install swiper
+npm install vue-awesome-swiper --save
 ```
 
 ### Compiles and hot-reloads for development

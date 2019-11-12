@@ -3,7 +3,7 @@
         <header-block></header-block>
         <ThreeBlockContent :block="getThreeBlockContent"></ThreeBlockContent>
         <swiper :block="getSliderContent"></swiper>
-        <diagonal-content></diagonal-content>
+        <diagonal-content :block="getDiagonalontent"></diagonal-content>
     </div>
 </template>
 <script>
@@ -30,6 +30,14 @@ export default {
             }
             else{
                 return this.homeData.slider
+            }
+        },
+        getDiagonalontent(){
+            if(this.homeData.diagonalContent === "null" || this.homeData.diagonalContent === "undefined") {
+                return null;
+            }
+            else{
+                return this.homeData.diagonalContent
             }
         }
     }
