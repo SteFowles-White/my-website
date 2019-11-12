@@ -4,6 +4,7 @@
 
 $base-green: #276864;
 $dark-base-green: #275e5b;
+$base-dark: #272733;
 $base-dark-blue: #04244A;
 $base-light-blue: #083D77;
 $base-light: #F5F3E3;
@@ -12,28 +13,30 @@ $white: white;
 //-----------------------
 //   BACKGROUND COLORS    
 //-----------------------
-
 .base-green-background-color {
-    background-color: $base-green
+    background-color: $base-green;
 }
 .base-light-background-color {
-    background-color: $base-light
+    background-color: $base-light;
 }
 .base-dark-blue-background-color {
     background-color: $base-dark-blue;
 }
-
+.base-dark-background-color {
+    background-color: $base-dark;
+}
 //-----------------------
 //    TEXT COLORS    
 //-----------------------
-
 .u__text__color__white{
     color: $white;
 }
 .u__text__base-light{
     color: $base-light
 }
-
+.u__text__dark-base-green{
+    color: $dark-base-green;
+}
 .u__text__color__dark__blue{
     color: $base-dark-blue;
 }

@@ -1,0 +1,24 @@
+.u-button__dark__blue {
+    background-color: $base-dark-blue !important;
+    color: $base-light !important;
+    padding: .5rem 3rem !important;
+    font-weight: 300;
+}
+@media only screen and (max-width: 992px) {
+    .u-button__dark__blue {
+    width: 30%;
+    }
+  }
+@media only screen and (max-width: 768px) {
+    .u-button__dark__blue {
+    width: 50%;
+    }
+  }
+@media only screen and (max-width: 576px) {
+    .u-button__dark__blue {
+    margin: auto;
+    width: 100%;
+    display: block;
+    }
+  }
+  

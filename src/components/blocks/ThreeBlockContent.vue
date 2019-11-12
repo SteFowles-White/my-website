@@ -1,9 +1,8 @@
 <template>
 <div class="base-light-background-color">
-    <div class="container">
-        <div class="row pb-2 pt-3">
-            <p class="u-h2 pl-3 pb-2 font-weight-normal">{{ getMainTitle }}</p>
-        </div>
+    <div class="container pt-3 pb-3">
+        <h1 class="u-h2 pt-2 mb-0 font-weight-light u__text__color__dark__blue">{{ getMainTitle }}</h1>
+        <h6 v-if="getSubtitle !== null" class="font-weight-bolder u__text__dark-base-green u-uppercase pb-3 mb-0 u-h6"> {{ getSubtitle }}</h6>
         <div class="row pb-3">
 
             <div v-for="(item, index) in getContent" class="col-md c__content__block" :key="index">
@@ -34,6 +33,9 @@ export default {
         },
         getMainTitle(){
             return this.block.mainTitle;
+        },
+        getSubtitle(){
+            return this.block.subtitle;
         }
     }
     

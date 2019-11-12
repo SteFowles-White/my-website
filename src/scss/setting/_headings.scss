@@ -43,3 +43,7 @@
 .u-h6 {
     @include fluid-text(320px, 1920px, 9px, 12px, 10.5px, 15px);
   }
+
+.u-uppercase {
+    text-transform: uppercase;
+  }

@@ -73,6 +73,9 @@ a:hover {
       font-size: 12px;
       line-height: 15px; } }
 
+.u-uppercase {
+  text-transform: uppercase; }
+
 .base-green-background-color {
   background-color: #276864; }
 
@@ -82,14 +85,40 @@ a:hover {
 .base-dark-blue-background-color {
   background-color: #04244A; }
 
+.base-dark-background-color {
+  background-color: #272733; }
+
 .u__text__color__white {
   color: white; }
 
 .u__text__base-light {
   color: #F5F3E3; }
 
+.u__text__dark-base-green {
+  color: #275e5b; }
+
 .u__text__color__dark__blue {
   color: #04244A; }
+
+.u-button__dark__blue {
+  background-color: #04244A !important;
+  color: #F5F3E3 !important;
+  padding: .5rem 3rem !important;
+  font-weight: 300; }
+
+@media only screen and (max-width: 992px) {
+  .u-button__dark__blue {
+    width: 30%; } }
+
+@media only screen and (max-width: 768px) {
+  .u-button__dark__blue {
+    width: 50%; } }
+
+@media only screen and (max-width: 576px) {
+  .u-button__dark__blue {
+    margin: auto;
+    width: 100%;
+    display: block; } }
 
 .c-nav {
   position: absolute;

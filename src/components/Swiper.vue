@@ -1,7 +1,8 @@
 <template>
-<div class="container-fluid base-dark-blue-background-color">
+<div class="container-fluid base-dark-background-color">
   <div class="container pt-5 pb-5">
-    <h1 class="u__text__base-light pb-4 font-weight-light u-h1">Previous websites worked on</h1>
+    <h1 v-if="getTitle !== null" class="u__text__base-light font-weight-light u-h1">{{ getTitle }}</h1>
+    <h6 v-if="getSubtitle !== null" class="font-weight-bolder u__text__dark-base-green u-uppercase pb-3 mb-0"> {{ getSubtitle }}</h6>
     <swiper :options="swiperOption">
       <swiper-slide class="swiper-slide" v-for="(slide, index) in getSwiperContent" :key="index">
         <div class="c-swiper__content__block">
@@ -56,6 +57,20 @@ export default {
           return null;
         }else{
           return this.block.images;
+        }
+      },
+      getTitle(){
+        if(this.block.title === null || this.block.title === undefined){
+          return null;
+        }else{
+          return this.block.title;
+        }
+      },
+      getSubtitle(){
+        if(this.block.subtitle === null || this.block.subtitle === undefined){
+          return null;
+        }else{
+          return this.block.subtitle;
         }
       }
     }

@@ -10,6 +10,7 @@
         },
         "ThreeBlockContent": {
             "mainTitle": "Web Development Process",
+            "subtitle": "working to clients neeeds",
             "blocks":{
                 "blockOne": {
                     "thumbnail": "understand-your-website",
@@ -29,6 +30,8 @@
             }
         },
         "slider": {
+            "title": "Work Examples",
+            "subtitle": "Previous website worked on",
             "images": {
                 "slideOne":{
                     "image": "auto-trail",
@@ -50,6 +53,7 @@
         "diagonalContent": {
             "title": "Type of Work",
             "subtitle": "Divese types of work",
+            "image": "abstract",
             "content": "Having worked on a variety of web development project to client demand, there is a real passion to make sure that you get what you need. This ranges from; making websites responsive to different devices, front ending web design projects and making amendments to existing web sites.",
             "buttonText": "More work",
             "buttonLink": "/work"
