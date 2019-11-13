@@ -3,7 +3,8 @@
         <header-block></header-block>
         <ThreeBlockContent :block="getThreeBlockContent"></ThreeBlockContent>
         <swiper :block="getSliderContent"></swiper>
-        <diagonal-content :block="getDiagonalontent"></diagonal-content>
+        <diagonal-content :block="getDiagonalContent"></diagonal-content>
+        <content-block :block="getContentBlock"></content-block>
     </div>
 </template>
 <script>
@@ -21,7 +22,7 @@ export default {
                 return null;
             }
             else{
-                return this.homeData.ThreeBlockContent
+                return this.homeData.ThreeBlockContent;
             }
         },
         getSliderContent(){
@@ -29,15 +30,23 @@ export default {
                 return null;
             }
             else{
-                return this.homeData.slider
+                return this.homeData.slider;
             }
         },
-        getDiagonalontent(){
+        getDiagonalContent(){
             if(this.homeData.diagonalContent === "null" || this.homeData.diagonalContent === "undefined") {
                 return null;
             }
             else{
-                return this.homeData.diagonalContent
+                return this.homeData.diagonalContent;
+            }
+        },
+        getContentBlock(){
+            if(this.homeData.contentBlock === "null" || this.homeData.contentBlock === "undefined") {
+                return null;
+            }
+            else{
+                return this.homeData.contentBlock;
             }
         }
     }

@@ -20,11 +20,9 @@
                     </div>
                 </div>
             </section>
-
         </div>
     </div>
 </div>
-  
 </template>
 <script>
 export default {
@@ -121,5 +119,4 @@ transform: skewX(15deg);
     padding-bottom: 1.5rem;
     }
 }
-
 </style>
