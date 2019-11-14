@@ -8,7 +8,7 @@
             <section class="c-diagonal__content__container base-light-background-color"> 
                 <div class="c-diagonal__content__container__reversed pl-sm-5 pt-sm-5 pb-sm-5 pr-sm-5 pr-md-0">
                     <div class="pl-lg-5 pr-dm-5 pr-md-0"> 
-                        <h1 v-if="getTitle !== null" class="font-weight-light u__text__color__dark__blue pl-lg-5"> {{ getTitle }}</h1>
+                        <h1 v-if="getTitle !== null" class="font-weight-lighter u__text__color__dark__blue pl-lg-5"> {{ getTitle }}</h1>
                         <h6 v-if="getSubtitle !== null" class="font-weight-bolder u__text__dark-base-green pl-lg-5 u-uppercase u-h6"> {{ getSubtitle }}</h6>
                         <p v-if="getContent !== null" class="u__text__color__dark__blue pl-lg-5 mb-5">{{ getContent }}</p>
                         <div class="pl-lg-5">
