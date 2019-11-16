@@ -1,8 +1,7 @@
 <template>
-<div>
-
-</div>
-    
+    <div class="">
+        <header-banner></header-banner>
+    </div>
 </template>
 <script>
 export default {

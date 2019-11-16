@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid c__nav__container">
         <div class="navbar navbar-expand-md">
-            <a href="" class="c__nav__logo"><img class="pt-1 pb-1 c-nav__logo" src="../../assets/icons/logo.png"></a>
+            <router-link to="/"  class="c__nav__logo" exact><img class="pt-1 pb-1 c-nav__logo" src="../../assets/icons/logo.png"></router-link>
             <button @click="mobileNavVeiw = !mobileNavVeiw" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <menu-icon></menu-icon>
             </button>

@@ -1,6 +1,6 @@
 <template>
-    <div>
-
+    <div class="">
+        <header-banner></header-banner>
     </div>
 </template>
 <script>

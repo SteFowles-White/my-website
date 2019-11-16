@@ -13,6 +13,7 @@ import HeaderBlock from './components/blocks/HeaderBlock'
 import ThreeBlockContent from './components/blocks/ThreeBlockContent'
 import DiagonalContent from './components/blocks/DiagonalContent'
 import ContentBlock from './components/blocks/ContentBlock'
+import HeaderBanner from './components/blocks/HeaderBanner'
 import Swiper from './components/Swiper'
 
 
@@ -33,6 +34,8 @@ Vue.component( 'ThreeBlockContent' , ThreeBlockContent )
 Vue.component( 'Swiper' , Swiper )
 Vue.component( 'DiagonalContent' , DiagonalContent )
 Vue.component( 'ContentBlock' , ContentBlock )
+Vue.component( 'HeaderBanner' , HeaderBanner )
+
 
 //------------------------------------
 //         CORE PAGES

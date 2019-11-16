@@ -45,6 +45,7 @@ export default {
     -o-animation: fade 4s forwards; /* Opera < 12.1 */
     animation: fade 4s forwards;
 }
+
 @keyframes fade {
     from {opacity: 0;}
     to {opacity: 1;}
