@@ -1,6 +1,7 @@
 <template>
     <div class="c__header__containter">
-        <div class="c__header__sub__container position-absolute"></div>
+        <div class="c__header__sub__container position-absolute" 
+            :style="{'background-image': 'url(' + require('../../assets/img/headerBlock.jpg') + ')'}"></div>
         <div class="container c__header__sub__content">
                 <div class="col c__header__sub__content--alignment">
                      <h1 class="u-h1 text-center text-white font-weight-light col c__header__title">Creating Responsive Website Designs</h1>
@@ -32,7 +33,8 @@ export default {
 }
 
 .c__header__containter {
-    background : url("../../assets/img/headerBlock.jpg");
+    // background : url("../../assets/img/headerBlock.jpg");
+    background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -65,5 +65,12 @@
             "buttonLink": "/contact"
         }
 
+    },
+    "aboutMe": {
+        "Header":{
+            "backgroundImage": "../../assets/img/about_me.jpg"
+        }
+        
     }
+
 }
