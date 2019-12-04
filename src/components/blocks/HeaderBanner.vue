@@ -1,19 +1,19 @@
 <template>
 <div class="c-header__banner__container"
-:style="{ backgroundImage: 'url(' + getBackgroundImage + ')' }">
+      :style="{ backgroundImage: 'url(' + require(`../../assets/img/${getBackgroundImage}.jpg`) + ')' }">
    <div class="c-header__banner__img"
          ></div>
    <div class="c-header__content__container">
       <div class="container c-header__full__height">
          <div class="row c-header__full__height">
-            <div class="col c-header__content pr-5 pt-5 pb-5 c-header__border__right">
+            <div class="col-12 col-md  c-header__content pr-5 pt-5 pb-5 c-header__border__right">
                <section class="pr-3">
                   <h1 class="u__text__base-light mb-4">What I do</h1>
                   <h5 class="u__text__base-light font-weight-light">Creating your designs into reality. This is done with a full set of skillsets and with a real passion for what I do.</h5>
                   <h5 class="u__text__base-light font-weight-light">From using the lasted tech skills, I can provide handle the creative needs to help drive your website and business forward.</h5>
                </section>
             </div>
-            <div class="col c-header__content">
+            <div class="col-12 col-md c-header__content">
                <button class="text-white btn btn-lg c__header__button">More About Me</button>
             </div>
          </div>
@@ -43,10 +43,13 @@ export default {
 </script>
 <style scoped>
 .c-header__banner__container {
-   /* background-color: red; */
    position: relative;
-   width: 100%;
-   padding-bottom: 30rem;
+   padding-bottom: 55rem;
+   background-attachment: fixed;
+   background-position: 50% 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden;
 }
 .c-header__banner__img{
    width: 100%;
@@ -74,6 +77,23 @@ export default {
    border: 1px solid white;
    border-radius: 5px;
    text-transform: uppercase;
+}
+@media only screen and (max-width: 992px) {
+   .c-header__banner__container {
+      padding-bottom: 40rem;
+      background-attachment: inherit;
+   }
+   .c__header__button{
+      font-size:1rem;
+      width:250px;
+   }
+   .u__text__base-light{
+      font-size: 2rem;
+   }
+   .u__text__base-light{
+      font-size: 1rem;
+      line-break: 1.3rem;
+   }
 }
 
 </style>

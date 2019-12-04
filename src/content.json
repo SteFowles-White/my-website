@@ -68,7 +68,13 @@
     },
     "aboutMe": {
         "Header":{
-            "backgroundImage": "../../assets/img/about_me.jpg"
+            "backgroundImage": "about_me"
+        },
+        "contentBlock":{
+            "title": "Get Intouch",
+            "content": "I am always happy to hear from you see how I can help you with you web development needs. If you would to ask me questions regarding work or job opportunities please send me an email by clicking on the button below. Speak soon !!",
+            "buttonText": "contact me",
+            "buttonLink": "/contact"
         }
         
     }

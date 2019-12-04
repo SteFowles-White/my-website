@@ -33,7 +33,7 @@ export default {
 }
 
 .c__header__containter {
-    // background : url("../../assets/img/headerBlock.jpg");
+    background : url("../../assets/img/headerBlock.jpg");
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
