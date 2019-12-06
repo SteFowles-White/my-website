@@ -70,6 +70,27 @@
         "Header":{
             "backgroundImage": "about_me"
         },
+        "simpleContentBlock1": {
+            "title": "HTML & CSS",
+            "subtitle": "Web Design",
+            "content": "Using HTML and CSS3 to develop the building block of a website. All with the aim on ensureing that the webiste that customer/user see are a true reflection of the company/client. I use the latest techniques such as flex box model to ensure that the website is fluent and mobile ready for your users.",
+            "link": "",
+            "reversed": false
+        },
+        "simpleContentBlock2": {
+            "title": "HTML & CSS",
+            "subtitle": "Web Design",
+            "content": "Using HTML and CSS3 to develop the building block of a website. All with the aim on ensureing that the webiste that customer/user see are a true reflection of the company/client. I use the latest techniques such as flex box model to ensure that the website is fluent and mobile ready for your users.",
+            "link": "",
+            "reversed": true
+        },
+        "simpleContentBlock3": {
+            "title": "HTML & CSS",
+            "subtitle": "Web Design",
+            "content": "Using HTML and CSS3 to develop the building block of a website. All with the aim on ensureing that the webiste that customer/user see are a true reflection of the company/client. I use the latest techniques such as flex box model to ensure that the website is fluent and mobile ready for your users.",
+            "link": "",
+            "reversed": false
+        },
         "contentBlock":{
             "title": "Get Intouch",
             "content": "I am always happy to hear from you see how I can help you with you web development needs. If you would to ask me questions regarding work or job opportunities please send me an email by clicking on the button below. Speak soon !!",
