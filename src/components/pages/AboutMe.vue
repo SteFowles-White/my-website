@@ -1,6 +1,7 @@
 <template>
     <div class="">
         <header-banner :header="getHeaderBanner"></header-banner>
+        <simple-content-block></simple-content-block>
         <content-block :block="getContent"></content-block>
     </div>
 </template>
