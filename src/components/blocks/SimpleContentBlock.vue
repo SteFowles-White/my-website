@@ -1,14 +1,14 @@
 <template>
-<div class="container mt-5 mb-5">
-    <div class="row" :class="{ c_direction : getisRevered}">
-        <div class="col-md-6 c-simple-content__content__container">
+<div class="container mt-1">
+    <div class="row c-simple-content--top-border" :class="{ c_direction : getisRevered}">
+        <div class="col-md-6 c-simple-content__content__container  c-simple-content--top-border--mobile">
             <h2 class="c-simple-content__title u__text__color__dark__blue">{{ getTitle }}</h2>
             <h4 class="c-simple-content__subtitle mb-3 u__text__dark-base-green text-uppercase"> {{ getSubtitle }}</h4>
             <div class="c-simple-content__content u__text__color__dark__blue">{{getContent }}</div>
-            <a class="c-simple-content__button" href="">Link</a>
+            <a  v-if ="getLink !== undefined" class="c-simple-content__button u-button base-green-background-color u__text__color__white" href="">Link</a>
         </div>
         <div class="col-md-6">
-            <img class="c-simple-content__img" src="https://source.unsplash.com/random/500x500">
+           <img v-if ="getImage !== undefined" :src="require(`../../assets/img/${getImage}.jpg`)" class="c-simple-content__img">
         </div>
     </div>
 </div>
@@ -78,9 +78,27 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
+.container{
+    transition: max-width 1s;
+}
 .c-simple-content__content__container{
-    border-top: 1px solid #04244A;
+}
+.c-simple-content__content{
+    padding-top: 1.5rem;
+    font-size: 1.3rem;
+    transition: padding-top 1s;
+}
+.c-simple-content--top-border{
+    border-top: 1px solid #272733;
+}
+.c-simple-content__button{
+    display: block;
+    width: 90%;
+    border-radius: .5rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
 }
 .c-simple-content__title{
     font-size: 3rem;
@@ -93,11 +111,44 @@ export default {
     line-height: 1.5rem;
 }
 .c-simple-content__img{
+    display: block;
+    margin: auto;
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    max-height: 400px;
+    max-width: 400px;
 }
 .c_direction{
     flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 992px) {
+    .c-simple-content__content{
+        padding-top: .5rem;
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .c-simple-content__content{
+        padding-top: 1rem;
+        font-size: 1.1rem;
+    }
+    .c-simple-content__button{
+    width: 100%;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .c-simple-content__content{
+        font-size: 1rem;
+    }
+    .c-simple-content--top-border{
+        border-top: 0px solid #272733;
+    }
+    .c-simple-content--top-border--mobile{
+         border-top: 1px solid #272733;
+    }
+    .c-simple-content__content__container{
+        width: 90% !important;
+        margin: auto;
+    }
 }
 </style>

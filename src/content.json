@@ -74,21 +74,21 @@
             "title": "HTML & CSS",
             "subtitle": "Web Design",
             "content": "Using HTML and CSS3 to develop the building block of a website. All with the aim on ensureing that the webiste that customer/user see are a true reflection of the company/client. I use the latest techniques such as flex box model to ensure that the website is fluent and mobile ready for your users.",
-            "link": "",
+            "image": "html_and_css",
             "reversed": false
         },
         "simpleContentBlock2": {
-            "title": "HTML & CSS",
-            "subtitle": "Web Design",
+            "title": "Javscript",
+            "subtitle": "Interactive Websites",
             "content": "Using HTML and CSS3 to develop the building block of a website. All with the aim on ensureing that the webiste that customer/user see are a true reflection of the company/client. I use the latest techniques such as flex box model to ensure that the website is fluent and mobile ready for your users.",
-            "link": "",
+            "image": "javascript",
             "reversed": true
         },
         "simpleContentBlock3": {
-            "title": "HTML & CSS",
-            "subtitle": "Web Design",
+            "title": "Vue",
+            "subtitle": "Javascript Framwork",
             "content": "Using HTML and CSS3 to develop the building block of a website. All with the aim on ensureing that the webiste that customer/user see are a true reflection of the company/client. I use the latest techniques such as flex box model to ensure that the website is fluent and mobile ready for your users.",
-            "link": "",
+            "image": "vue",
             "reversed": false
         },
         "contentBlock":{

@@ -1,7 +1,7 @@
 <template>
     <div class="">
         <header-banner :header="getHeaderBanner"></header-banner>
-        <simple-content-block :block="getsimpleContentBlock1"></simple-content-block>
+        <simple-content-block class="mt-5" :block="getsimpleContentBlock1"></simple-content-block>
         <simple-content-block :block="getsimpleContentBlock2"></simple-content-block>
         <simple-content-block :block="getsimpleContentBlock3"></simple-content-block>
         <content-block :block="getContent"></content-block>

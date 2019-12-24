@@ -11,16 +11,17 @@
                 <router-link to="/work" class="nav-link active c-nav__links u-h4">Work</router-link>
                 <router-link to="/contact" class="nav-link active c-nav__links u-h4">Contact</router-link>
             </nav>
+            <!-- mobile navigation view -->
             <transition name="slide">
                 <nav v-show="mobileNavVeiw"  class="c-nav__container__mobile d-md-none">
                     <div :class="{ c_nav__mobile: delayedView }">
                         <div class="nav-link active c-nav__links d-md-none pt-3 pb-3">
                             <button @click="mobileNavVeiw =!mobileNavVeiw" class="d-block "><img class="c_nav__mobile__button" src="../../assets/icons/cross-icon.png"></button>
                         </div>
-                        <router-link to="/" class="nav-link active c-nav__links__mobile c_nav__mobile__border__one" active-class="active" exact>Home</router-link>
-                        <router-link to="/about-me" class="nav-link active c-nav__links__mobile c_nav__mobile__border__two">About</router-link>
-                        <router-link to="/work" class="nav-link active c-nav__links__mobile c_nav__mobile__border__two">Work</router-link>
-                        <router-link to="/contact" class="nav-link active c-nav__links__mobile c_nav__mobile__border__two">Contact</router-link>
+                        <router-link @click.native="mobileNavVeiw =!mobileNavVeiw" to="/" class="nav-link active c-nav__links__mobile c_nav__mobile__border__one" active-class="active" exact>Home</router-link>
+                        <router-link @click.native="mobileNavVeiw =!mobileNavVeiw" to="/about-me" class="nav-link active c-nav__links__mobile c_nav__mobile__border__two">About</router-link>
+                        <router-link @click.native="mobileNavVeiw =!mobileNavVeiw" to="/work" class="nav-link active c-nav__links__mobile c_nav__mobile__border__two">Work</router-link>
+                        <router-link @click.native="mobileNavVeiw =!mobileNavVeiw" to="/contact" class="nav-link active c-nav__links__mobile c_nav__mobile__border__two">Contact</router-link>
                     </div>
                 </nav>
             </transition>

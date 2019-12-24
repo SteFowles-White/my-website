@@ -100,12 +100,24 @@ a:hover {
 .u__text__color__dark__blue {
   color: #04244A; }
 
+.container {
+  transition: max-width 1s; }
+
+.u-button {
+  text-transform: uppercase;
+  cursor: pointer; }
+
+.u-button:hover {
+  color: white;
+  text-decoration: none; }
+
 .u-button__dark__blue {
   background-color: #04244A !important;
   color: #F5F3E3 !important;
   padding: .5rem 3rem !important;
   font-weight: 300;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
 
 @media only screen and (max-width: 992px) {
   .u-button__dark__blue {

@@ -1,3 +1,11 @@
+.u-button{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.u-button:hover{
+    color: $white;
+    text-decoration: none;
+}
 .u-button__dark__blue {
     background-color: $base-dark-blue !important;
     color: $base-light !important;
