@@ -114,8 +114,8 @@ export default {
     display: block;
     margin: auto;
     width: 100%;
-    max-height: 400px;
-    max-width: 400px;
+    max-height: 560px;
+    max-width: 560px;
 }
 .c_direction{
     flex-direction: row-reverse;

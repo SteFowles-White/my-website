@@ -67,8 +67,12 @@
 
     },
     "aboutMe": {
-        "Header":{
-            "backgroundImage": "about_me"
+        "header":{
+            "backgroundImage": "about_me",
+            "mainHeader": "What I do",
+            "content_one": "Creating your designs into reality. This is done with a full set of skillsets and with a real passion for what I do.",
+            "content_two": "From using the lasted tech skills, I can provide handle the creative needs to help drive your website and business forward.",
+            "button_text": "More About Me"
         },
         "simpleContentBlock1": {
             "title": "HTML & CSS",
@@ -98,6 +102,13 @@
             "buttonLink": "/contact"
         }
         
+    },
+    "contactMe": {
+        "header":{
+            "backgroundImage": "contact-us",
+            "mainHeader": "I'm alway happy to anwer you questions",
+            "content_one": "To get in touch fill in the form below."
+        }
     }
 
 }

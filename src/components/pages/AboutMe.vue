@@ -19,8 +19,8 @@ export default {
     },
     computed: {
         getHeaderBanner(){
-            if(this.AboutMeData.Header !== null || this.AboutMeData.Header !== undefined){
-                    return this.AboutMeData.Header;
+            if(this.AboutMeData.header !== null || this.AboutMeData.header !== undefined){
+                    return this.AboutMeData.header;
                 } else {
                      return undefined;
             }

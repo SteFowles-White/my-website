@@ -6,15 +6,15 @@
    <div class="c-header__content__container">
       <div class="container c-header__full__height">
          <div class="row c-header__full__height">
-            <div class="col-12 col-md  c-header__content c-header__border__right">
+            <div class="col-12 col-md c-header__content" :class="{ c_header__border__right: getButtonText !== undefined }">
                <section class="pr-3 c-header__text__container">
-                  <h1 class="u__text__base-light mb-4">What I do</h1>
-                  <h5 class="u__text__base-light font-weight-light">Creating your designs into reality. This is done with a full set of skillsets and with a real passion for what I do.</h5>
-                  <h5 class="u__text__base-light font-weight-light">From using the lasted tech skills, I can provide handle the creative needs to help drive your website and business forward.</h5>
+                  <h1 v-if="getMainHeader !== undefined" class="u__text__base-light mb-4"> {{ getMainHeader }}</h1>
+                  <h5 v-if="getContentOne !== undefined" class="u__text__base-light font-weight-light"> {{ getContentOne }} </h5>
+                  <h5 v-if="getContentTwo !== undefined" class="u__text__base-light font-weight-light"> {{ getContentTwo }} </h5>
                </section>
             </div>
-            <div class="col-12 col-md c-header__content">
-               <button class="text-white btn btn-lg c__header__button">More About Me</button>
+            <div v-if="getButtonText !== undefined" class="col-12 col-md c-header__content">
+               <button class="text-white btn btn-lg c__header__button"> {{ getButtonText }} </button>
             </div>
          </div>
       </div>
@@ -37,8 +37,43 @@ export default {
           } else {
              return undefined;
           }
+       },
+       getMainHeader(){
+         if(this.header.mainHeader !== undefined || this.header.mainHeader !== null){
+             return this.header.mainHeader;
+            } else {
+               return undefined;
+            }
+       },
+       getContentOne(){
+         if(this.header.content_one !== undefined || this.header.content_one !== null){
+             return this.header.content_one;
+            } else {
+               return undefined;
+            }
+       },
+       getContentTwo(){
+         if(this.header.content_two !== undefined || this.header.content_two !== null){
+             return this.header.content_two;
+            } else {
+               return undefined;
+            }
+       },
+       getButtonText(){
+         if(this.header.button_text !== undefined || this.header.button_text !== null){
+             return this.header.button_text;
+            } else {
+               return undefined;
+            }
+       },
+       getButtonLink(){
+         if(this.header.button_link !== undefined || this.header.button_link !== null){
+             return this.header.button_link;
+            } else {
+               return undefined;
+            }
        }
-    }
+    },
 }
 </script>
 <style scoped>
@@ -72,7 +107,7 @@ export default {
    height: 100%;
    align-items: center;
 }
-.c-header__border__right {
+.c_header__border__right {
     border-right: 1px solid white;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -126,7 +161,7 @@ export default {
    .c__header__button{
       background-color: #04244A;
    }
-   .c-header__border__right {
+   .c_header__border__right {
       border-right: 1px solid white;
       padding-top: 0rem;
       padding-bottom: 0rem;
