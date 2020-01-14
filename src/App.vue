@@ -33,8 +33,7 @@ export default {
 </script>
 
 <style>
-/* #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  color: #2c3e50;
-} */
+#app {
+  overflow: hidden;
+}
 </style>

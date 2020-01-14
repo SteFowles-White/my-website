@@ -1,6 +1,7 @@
 <template>
     <div class="">
         <header-banner :header="getContactData"></header-banner>
+        <contact-form></contact-form>
     </div>
 </template>
 <script>

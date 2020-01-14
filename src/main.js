@@ -22,6 +22,12 @@ import SimpleContentBlock from './components/blocks/SimpleContentBlock'
 import Swiper from './components/Swiper'
 import ThreeBlockContent from './components/blocks/ThreeBlockContent'
 
+//------------------------------------
+//         Contact Form
+//------------------------------------
+import ContactForm from './components/contactForm/ContactForm'
+
+
 
 
 //------------------------------------
@@ -43,9 +49,15 @@ Vue.component( 'ContentBlock' , ContentBlock )
 Vue.component( 'HeaderBanner' , HeaderBanner )
 Vue.component( 'SimpleContentBlock' , SimpleContentBlock )
 
+//------------------------------------
+//         Contact Us
+//------------------------------------
+Vue.component( 'ContactForm' , ContactForm )
+
+
 
 //------------------------------------
-//         CORE PAGES
+//         Vue Route Config
 //------------------------------------
 
 Vue.config.productionTip = false
